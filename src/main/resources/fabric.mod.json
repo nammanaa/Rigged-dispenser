@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "riggeddispenser",
+  "version": "${version}",
+  "name": "Rigged Dispenser",
+  "description": "Rig 2 dispensers: one side always fires an equal or lower slot.",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.rigged.RiggedDispenser"],
+    "client": ["com.example.rigged.client.RiggedDispenserClient"]
+  },
+  "mixins": ["riggeddispenser.mixins.json"],
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}
